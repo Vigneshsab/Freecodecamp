@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="viewport" content="width=device-width , initial-scale=1.0 ">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="fonts/font-awesome.min.css"/>
+<style>
+    h2 {
+    font-family: Lobster, Monospace;
+  }
+ .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6 col-sm-8 col-xs-8">
+				<h2 class="text-primary text-center">CatPhotoApp</h2>
+				<!--Here we have used "text-center " class of bootstrap to center the heading element and we can give multiple class name just by seperating them using space -->
+			</div>
+			<div class="col-lg-6 col-sm-4 col-xs-4">
+				<a href="#"><img class="img-responsive thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. "></a>
+			</div>
+		</div>
+		<img src="https://bit.ly/fcc-running-cats" alt="cute-cats" class="img-responsive"> 
+		<!-- Here we have used "img-responsive" class of bootstrap to make image responsive-->
+		<div class="row">
+			<div class="col-lg-4 col-sm-4 col-xs-4">
+				<button class="btn-block btn btn-primary fa fa-thumbs-up">Like</button>
+				<!--This button takes up all the width of the  device it is on , we hae used "btn-block" and "btn" both are bootstrap class .The btn-primary class is the main color you'll use in your app. It is useful for highlighting actions you want your user to take-->
+			</div>
+			<div class="col-lg-4 col-sm-4 col-xs-4">
+				<button class="btn btn-block btn-info">Info</button>
+				<!-- Bootstrap comes with several pre-defined colors for buttons. The btn-info class is used to call attention to optional actions that the user can take.-->
+			</div>
+			<div class="col-lg-4 col-sm-4 col-xs-4">
+				<button class="btn btn-block btn-danger">Delete</button>
+			</div>
+		</div>
+
+
+		<p>Things cats <span class="text-danger">love</span>:</p>
+		<ul>
+  			<li>cat nip</li>
+  			<li>laser pointers</li>
+  			<li>lasagna</li>
+		</ul>
+		<p>Top 3 things cats <span class="text-danger">hate</span>:</p>
+		<ol>
+  			<li>flea treatment</li>
+  			<li>thunder</li>
+  			<li>other cats</li>
+		</ol>
+		<form action="/submit-cat-photo">
+				
+  			<label><input type="radio" name="indoor-outdoor"> Indoor</label>
+  			<label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+  			<div class="row">
+  				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+  					<label><input type="checkbox" name="personality"> Loving</label>
+  				</div>
+  				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+  					<label><input type="checkbox" name="personality"> Lazy</label>
+  				</div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+  					<label><input type="checkbox" name="personality"> Crazy</label>
+  				</div>
+  			</div>
+  			<div class="row">
+  				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+  		  			<input type="text" class="form-control" placeholder="cat photo URL" required>
+  		  		</div>
+
+  		  		<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+  					<button type="submit" class="btn btn-primary">Submit</button>
+  					<!--"btn class of bootstrap to style button." -->
+  				</div>
+  			</div>
+		</form>
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<div class="well"></div>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				<div class="well"></div>
+			</div>
+		</div>
+	<script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
